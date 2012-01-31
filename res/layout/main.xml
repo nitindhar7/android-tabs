@@ -4,20 +4,29 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
-    <TabWidget
-        android:id="@android:id/tabs"
-        android:layout_width="fill_parent"
-        android:layout_height="48dp"
-        android:background="#000"
-        android:gravity="center_horizontal" />
-
-    <FrameLayout
-        android:id="@android:id/tabcontent"
+    <LinearLayout
+        android:id="@+id/tabcontainer"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:fadeScrollbars="false"
-        android:fadingEdge="none"
-        android:scrollbars="@null" >
-    </FrameLayout>
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#000"
+            android:gravity="center_horizontal" >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadeScrollbars="false"
+            android:fadingEdge="none"
+            android:scrollbars="@null" >
+        </FrameLayout>
+
+    </LinearLayout>
 
 </TabHost>
