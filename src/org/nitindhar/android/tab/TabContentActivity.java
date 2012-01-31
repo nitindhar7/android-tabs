@@ -11,6 +11,7 @@ public class TabContentActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         TextView textview = new TextView(this);
+        // Get data passed in from the tab for display
         textview.setText(getIntent().getStringExtra("content"));
         setContentView(textview);
     }
