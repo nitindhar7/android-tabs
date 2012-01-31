@@ -8,6 +8,16 @@
         android:id="@android:id/tabs"
         android:layout_width="fill_parent"
         android:layout_height="48dp"
-        android:orientation="horizontal" />
+        android:background="#000"
+        android:gravity="center_horizontal" />
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:scrollbars="@null" >
+    </FrameLayout>
 
 </TabHost>
